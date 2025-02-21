@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CelestialCart</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit
+    +Mono:wght@200..900&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <div class="container1">
+        <div class="main">
+            <div class="logo">
+                <img src="{% static '/images/logo.png' %}" width="125px" height="50px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <form method="post" action="/register/">
+        {% csrf_token %}
+        <label for="username">Enter your username :</label>
+        <input id="username" type="text" name="username">
+        <br>
+        <label for="password">Enter your password :</label>
+        <input id="password" type="password" name="password">
+        <br>
+        <input type="submit" class="btn">
+        <a href="/">Already a user?. login here</a>
+    </form>
+</body>
+
+</html>

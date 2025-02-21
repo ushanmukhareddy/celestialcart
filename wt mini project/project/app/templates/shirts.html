@@ -1,0 +1,221 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirts - CelestialCart</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit
+    +Mono:wght@200..900&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <style>
+        .dropbtn {
+          background-color: #4CAF50;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+          background-color: #3e8e41;
+        }
+        </style>
+</head>
+<body>
+    <div class="container2">
+        <div class="main">
+            <div class="logo">
+                <img src="{% static '/images/logo.png' %}" width="125px" height="50px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/product">Product</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </nav>
+
+            <div class="box">
+                <div class="cart-count">0</div>
+                <ion-icon name="cart"  id="cart-icon" class="add-cart"></ion-icon>
+            </div>
+        
+            <div class="cart">
+                <div class="cart-title">Cart Items</div>
+                <div class="cart-content">
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">Rs.0</div>
+            </div>
+            <button class="btn-buy" >Place Order</button>
+            <ion-icon name="close" id="cart-close"></ion-icon>
+        </div>
+    </div>
+
+    <script src="{% static '/javascript/script.js' %}"></script>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>SHIRTS</h2>
+            <div class="dropdown">
+                <button class="dropbtn">Sort by</button>
+                <div class="dropdown-content">
+                    <a href="/laptop/">Laptops</a>
+                    <a href="/watches/">Watches</a>
+                    <a href="/shirts">Shirts</a>
+                    <a href="/pants">Pants</a>
+                    <a href="/mobile">mobile</a>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static '/images/shirt1.jpg' %}" class="food-img">
+                <h4 class="food-title">Shirt1</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <p class="food-price">Rs.500</p>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="col-4">
+                <img src="{% static '/images/shirt2.jpg' %}" class="food-img">
+                <h4 class="food-title">Shirt2</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <p class="food-price">Rs.800</p>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="col-4">
+                <img src="{% static '/images/shirt3.jpg' %}" class="food-img">
+                <h4 class="food-title">Shirt3</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <p class="food-price">Rs.2000</p>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+            <div class="col-4">
+                <img src="{% static '/images/shirt4.jpg' %}" class="food-img">
+                <h4 class="food-title">Shirt4</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <p class="food-price">Rs.1000</p>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static '/images/shirt1.jpg' %}" class="food-img">
+                <h4 class="food-title">Shirt5</h4>
+                <div class="ratings">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <p class="food-price">Rs.900</p>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download Our App</h3>
+                    <p>Downlaod App for Android and ios Mobile</p>
+                    <div class="app-logo">
+                        <img src="{% static '/images/playstore.png' %}">
+                        <img src="{% static '/images/appstore.png' %}">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="{% static '/images/logo.png' %}"
+                    <p>Our Purpose Is To Sustainable Make the Pleasure
+                        and Benifits of Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li> Refund Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                        <li>Twitter</li>
+                        <li>Facebook</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copyCopyright 2024 - CelestialCart</p>
+        </div>
+    </div>
+</body>
+</html>

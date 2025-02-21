@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CelestialCart</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reddit
+        +Mono:wght@200..900&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="logo">
+                <img src="{% static '/images/logo.png' %}" width="125px" height="50px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/msg">Home</a></li>
+                    <li><a href="/msg">Product</a></li>
+                    <li><a href="/msg">About</a></li>
+                    <li><a href="/msg">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div
+    <div class="header1">
+        <div class="msg1">
+            <h1>Please Log In To Continue</h1>
+        </div>
+        <div class="msg2">
+            <a href="/login1" class="btn">click here</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download Our App</h3>
+                    <p>Downlaod App for Android and ios Mobile</p>
+                    <div class="app-logo">
+                        <img src="{% static '/images/playstore.png' %}">
+                        <img src="{% static '/images/appstore.png' %}">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="{% static '/images/logo.png' %}"
+                    <p>Our Purpose Is To Sustainable Make the Pleasure
+                        and Benifits of Sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li> Refund Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                        <li>Twitter</li>
+                        <li> Facebook</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copyCopyright 2024 - CelestialCart</p>
+        </div>
+    </div>
+</body>
+</html>
